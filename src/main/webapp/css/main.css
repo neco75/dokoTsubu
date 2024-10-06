@@ -1,0 +1,140 @@
+/* 全体の基本スタイル */
+body {
+	font-family: Arial, sans-serif;
+	background-color: #f0f8ff;
+	margin: 0;
+	padding: 0;
+	display: flex;
+	justify-content: center;
+	align-items: flex-start;
+	height: 100vh;
+}
+
+/* コンテナ全体のスタイル */
+.container {
+	background-color: #fff;
+	padding: 40px;
+	border-radius: 12px;
+	box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+	width: 60%;
+	margin-top: 20px;
+}
+
+/* タイトルのスタイル */
+.title {
+	color: #333;
+	font-size: 24px;
+	margin-bottom: 20px;
+	text-align: center;
+}
+
+/* ログイン情報のスタイル */
+.login-info {
+	color: #555;
+	font-size: 16px;
+	margin-bottom: 15px;
+}
+
+/* ログアウトリンクのスタイル */
+.logout-link {
+	color: #f44336;
+	text-decoration: none;
+	margin-left: 10px;
+	font-weight: bold;
+}
+
+.logout-link:hover {
+	text-decoration: underline;
+}
+
+/* 更新リンクのスタイル */
+.update-link {
+	margin-bottom: 15px;
+	text-align: right;
+}
+
+.update-link a {
+	color: #4CAF50;
+	text-decoration: none;
+	font-weight: bold;
+}
+
+.update-link a:hover {
+	text-decoration: underline;
+}
+
+/* つぶやきフォームのスタイル */
+.tweet-form {
+	display: flex;
+	flex-direction: column;
+	align-items: center;
+	margin-bottom: 20px;
+}
+
+.tweet-input {
+	width: 100%;
+	padding: 10px;
+	margin-bottom: 10px;
+	border: 1px solid #ccc;
+	border-radius: 5px;
+	box-sizing: border-box;
+	font-size: 16px;
+}
+
+.submit-btn {
+	padding: 10px 20px;
+	background-color: #4CAF50;
+	color: white;
+	border: none;
+	border-radius: 5px;
+	font-size: 16px;
+	cursor: pointer;
+}
+
+.submit-btn:hover {
+	background-color: #45a049;
+}
+
+/* エラーメッセージのスタイル */
+.error-msg {
+	color: #f44336;
+	font-size: 14px;
+	margin-bottom: 15px;
+}
+
+/* つぶやきリスト全体のスタイル */
+.mutter-list {
+	margin-top: 20px;
+}
+
+/* つぶやき項目のスタイル */
+.mutter-item {
+	border-bottom: 1px solid #ddd;
+	padding: 10px 0;
+}
+
+.mutter-user {
+	color: #333;
+	font-weight: bold;
+}
+
+.mutter-text {
+	color: #555;
+	margin-top: 5px;
+}
+
+.mutter-time {
+	font-size: 0.9em;
+	/* 小さめのフォントサイズ */
+	color: #999;
+	/* 時刻は控えめな色で */
+	text-align: right;
+	/* 右寄せで控えめに表示 */
+}
+
+/* メディアクエリ：小さな画面用の調整 */
+@media (max-width: 600px) {
+	.container {
+		width: 90%;
+	}
+}
